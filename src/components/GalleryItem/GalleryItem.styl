@@ -1,0 +1,30 @@
+.gallery-item {
+  width 100%
+  height 100%
+  background-size cover
+  background-position center
+  background-repeat no-repeat
+  &__overlay {
+    width 100%
+    height 100%
+    background-image linear-gradient(
+      112.5deg,
+      rgba(primaryColor, 0.4) 0%,
+      rgba(primaryColor, 0.4) 31%,
+      transparent 31%,
+      transparent 69.7%,
+      rgba(tertiaryColor, 0.3) 69.7%,
+      rgba(tertiaryColor, 0.3) 100%
+    )
+  }
+
+  @media screen and (max-width tabletBreakpoint) {
+    &__overlay {
+      background-image linear-gradient(
+        to bottom,
+        rgba(primaryColor, 0.8) 0%,
+        transparent 100%
+      )
+    }
+  }
+}

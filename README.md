@@ -1,4 +1,4 @@
-# tpu
+# tpu-test
 
 ## Project setup
 ```
